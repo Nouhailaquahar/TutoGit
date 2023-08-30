@@ -14,8 +14,7 @@ pipeline {
         
         stage("Build and Run Angular Project") {
             steps {
-                // Installer les dépendances Node.js
-                sh "npm install"
+             
                 
                 // Construire le projet Angular
                 sh "ng build"
