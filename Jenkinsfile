@@ -19,7 +19,7 @@ pipeline {
         stage("Build and Run Angular Project") {
             steps {
                 // Installer les dépendances Node.js
-              dir("TutoGit"){
+              dir("src"){
                 sh "npm install"
                 
                 // Construire le projet Angular
