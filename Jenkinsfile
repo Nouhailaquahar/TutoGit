@@ -19,15 +19,15 @@ pipeline {
         stage("Build and Run Angular Project") {
             steps {
                 // Installer les dépendances Node.js
-              dir("src"){
-                sh "npm install"
+              dir("\\src"){
+              //  sh "npm install"
                 
                 // Construire le projet Angular
               }
               //sh "ng build"
                 
                 // Exécuter le projet 
-             //   sh "ng serve"
+               sh "ng serve"
             }
         }
     }
