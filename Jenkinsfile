@@ -19,19 +19,21 @@ pipeline {
         stage("Build and Run Angular Project") {
             steps {
                 // Installer les dépendances Node.js
+              dir("TutoGit"){
                 sh "npm install"
                 
                 // Construire le projet Angular
-                sh "ng build"
+              }
+              //sh "ng build"
                 
                 // Exécuter le projet 
-                sh "ng serve"
+             //   sh "ng serve"
             }
         }
     }
-    post {
-        success {
-            echo "Le clonage du dépôt Git et l'exécution du projet Angular se sont bien déroulés."
-        }
-    }
+    //post {
+      //  success {
+        //    echo "Le clonage du dépôt Git et l'exécution du projet Angular se sont bien déroulés."
+        //}
+    //}
 }
