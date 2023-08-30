@@ -7,7 +7,7 @@ pipeline {
             steps {
                 git(
                     url: "https://github.com/Nouhailaquahar/TutoGit.git",
-                    branch: "master",
+                    branch: "main",
                     changelog: true,
                     poll: true
                 )
